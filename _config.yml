@@ -1,20 +1,45 @@
-# Site settings
-title: Always Lee
-description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Always Lee # your site title
+author: GitHub User
+email: ddoddo1997@gmail.com # email for form submission, you also have to change it in _js/scripts.js
+description: Everything of my knowledge # this means to ignore newlines until "baseurl:"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+facebook_username: profile.php?id=100011515481019 # replace with your_twitter_username or comment to remove link from footer
+github_username:  AlwaysLee-Creater # replace with your_github_username or comment to remove link from footer
+instagram_username: yeonjung.i # replace with your_instagram_username or comment to remove link from footer
+social:
+  name: Always Lee
+    - https://www.facebook.com/profile.php?id=100011515481019
+    - https://www.instagram.com/yeonjung.i
+    - https://github.com/AlwaysLee-Creater
 
-# User settings
-username: Always Lee
-user_description: Everything of my knowledge. Visit my blog here <a href="https://AlwaysLee.com" target="_blank">https://AlwaysLee.com</a>
-user_title: Software Engineer
-email: ddoddo1997@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
+disqus:
+  shortname: YJLee # to enable comments replace with your_disqus_shortname
 
-# Google-analytics
-google-analytics:
-  id: ""
+# Build settings
+markdown: kramdown
+highlighter: rouge # or pygments or null
+theme: jekyll-sleek
+exclude:
+  - README.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - npm-debug.log
+  - gulpfile.js
+  - sleek.png
 
-exclude: ['package.json', 'src' , 'node_modules']
+include: ['_pages']
+permalink: /:title/
+
+compress_html:
+  clippings: all
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+theme: jekyll-sleek
